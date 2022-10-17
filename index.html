@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="hridoy sheikh">
+
+        <!--[if IE]><link rel="shortcut icon" href="assets/favicon/favicon.ico"><![endif]-->
+        <!-- <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png"> -->
+	<!--
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">-->
+        <!-- <link rel="icon" href="assets/favicon/favicon-196.png"> -->
+
+        <title>Cyber Bangla User Login</title>
+        <!-- <link rel="stylesheet" href="assets/login.css"> -->
+
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+<body>
+
+    <div id="logo">
+    <img src="img/cb.png">
+    </div>
+    <h1>Cyber Bangla User Login</h1>
+        <div id="main-container" >
+            <div class="left-part">
+                <div><a href="check_payment.php" class="tbutton">Check <br> Payment</a></div>  
+                <div><a href="retrieve_user_login.php" class="tbutton">Retrieve User Id/Password</a></div>  
+                <div><a href="#" class="tbutton">Job Announcement</a></div>  
+                <div><a href="customer-care-center.htm" target="_blank" class="tbutton">Customer Care</a></div>  
+            </div>
+            <div class="right-part">
+                <div id="login-form-container">
+                            <p>Applicant Login</p>
+                            <form action="http://sainik.teletalk.com.bd/validate_login.php" method="post">
+                                
+                                <div class="form-container">
+                                    <label>User ID</label>
+                                    <input type="text" name="userid" class="crazy" id="userid" placeholder="user id" value="">
+                                </div>
+
+                                <div class="form-container">
+                                    <label>Password</label>
+                                    <input type="password" name="password" class="crazy" id="password" placeholder="password" value="">
+                                </div>
+
+                                
+                                <div class="form-container">
+                                    <label>Gender</label>
+                                    <select name="gender" id="gender" class="crazy">
+                                        <option value="">Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                </div>
+
+                                <div id="message" class="hidden"></div>
+                                <input type="submit" id="submit" value="Login" class="tbutton">
+                            </form>
+                        </div>                    
+            </div>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/login.js"></script>
+</body>
+</html>
